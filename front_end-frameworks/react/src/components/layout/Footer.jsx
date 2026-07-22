@@ -1,4 +1,5 @@
-import { BrainCircuit } from "lucide-react";
+import Brand from "../ui/Brand.jsx";
+import SocialLink from "../ui/SocialLink.jsx";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,18 +8,7 @@ function Footer() {
     <footer className="bg-black px-6 text-slate-50">
       <div className="mx-auto grid max-w-6xl gap-10 pb-12 pt-24 md:grid-cols-5">
         <div className="flex flex-col items-start gap-4 md:col-span-2">
-        <a
-            href="#hero-section"
-            className="flex items-center gap-4 font-bold text-slate-50"
-        >
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-violet-500 text-white shadow-lg shadow-violet-500/40">
-                <BrainCircuit className="h-4 w-4" />
-            </span>
-
-            <span className="text-sm">
-                Agentic AI
-            </span>
-        </a>
+          <Brand variant="footer" />
 
           <p className="text-xs text-slate-500">
             Explore the future of development with Agentic AI.
@@ -26,47 +16,35 @@ function Footer() {
 
           <ul className="flex items-center gap-2">
             <li>
-              <a
+              <SocialLink
                 href="https://www.instagram.com/holbertonfrance/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 bg-slate-950 text-slate-400 transition hover:border-violet-500 hover:bg-violet-500 hover:text-white hover:shadow-lg hover:shadow-violet-500/40"              >
-                <i className="bi bi-instagram" aria-hidden="true" />
-              </a>
+                label="Instagram"
+                iconClassName="bi bi-instagram"
+              />
             </li>
 
             <li>
-              <a
+              <SocialLink
                 href="https://www.tiktok.com/@holbertonfrance"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="TikTok"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 bg-slate-950 text-slate-400 transition hover:border-violet-500 hover:bg-violet-500 hover:text-white hover:shadow-lg hover:shadow-violet-500/40"              >
-                <i className="bi bi-tiktok" aria-hidden="true" />
-              </a>
+                label="TikTok"
+                iconClassName="bi bi-tiktok"
+              />
             </li>
 
             <li>
-              <a
+              <SocialLink
                 href="https://x.com/HolbertonFRA"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 bg-slate-950 text-slate-400 transition hover:border-violet-500 hover:bg-violet-500 hover:text-white hover:shadow-lg hover:shadow-violet-500/40"              >
-                <i className="bi bi-twitter-x" aria-hidden="true" />
-              </a>
+                label="X"
+                iconClassName="bi bi-twitter-x"
+              />
             </li>
 
             <li>
-              <a
+              <SocialLink
                 href="https://www.youtube.com/@HolbertonFrance"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 bg-slate-950 text-slate-400 transition hover:border-violet-500 hover:bg-violet-500 hover:text-white hover:shadow-lg hover:shadow-violet-500/40"              >
-                <i className="bi bi-youtube" aria-hidden="true" />
-              </a>
+                label="YouTube"
+                iconClassName="bi bi-youtube"
+              />
             </li>
           </ul>
         </div>

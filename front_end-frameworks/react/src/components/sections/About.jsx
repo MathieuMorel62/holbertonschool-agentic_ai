@@ -1,4 +1,7 @@
-import steps from "../data/steps.js";
+import steps from "../../data/steps.js";
+import SectionBadge from "../ui/SectionBadge.jsx";
+import SectionTitle from "../ui/SectionTitle.jsx";
+
 
 function About() {
   return (
@@ -8,16 +11,14 @@ function About() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
-            ✦ What is Agentic AI? ✦
-          </span>
+          <SectionBadge>What is Agentic AI?</SectionBadge>
 
-          <h2 className="mt-8 text-4xl font-black leading-none tracking-tight md:text-5xl">
+          <SectionTitle
+            className="mt-8"
+            highlight="It acts with purpose"
+          >
             AI that does more than answer
-            <span className="block text-violet-300">
-              It acts with purpose
-            </span>
-          </h2>
+          </SectionTitle>
 
           <p className="mt-8 max-w-2xl text-left text-sm leading-6 text-slate-400 md:text-base">
             Agentic AI refers to artificial intelligence systems designed to

@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Button from "../ui/Button.jsx";
+import SectionBadge from "../ui/SectionBadge.jsx";
+import SectionTitle from "../ui/SectionTitle.jsx";
 
 import {
   AtSign,
@@ -93,35 +96,23 @@ function Contact() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,rgba(2,6,23,0.45)_75%)]" />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center gap-8 px-6 text-center">
-        <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
-          ✦ Start your AI journey ✦
-        </span>
+        <SectionBadge>Start your AI journey</SectionBadge>
 
-        <h2 className="text-4xl font-black leading-none tracking-tight md:text-5xl">
+        <SectionTitle highlight="Agentic AI?">
           Ready to Explore
-          <span className="block text-violet-300">
-            Agentic AI?
-          </span>
-        </h2>
+        </SectionTitle>
 
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            href="https://www.holbertonschool.fr/rejoindre-lhippocamp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md bg-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:bg-violet-600"
-          >
+          <Button href="https://www.holbertonschool.fr/rejoindre-lhippocamp">
             Enroll at Holberton School →
-          </a>
+          </Button>
 
-          <a
+          <Button
             href="https://www.holbertonschool.fr/admission"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md border border-slate-800 bg-slate-950 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-950/40 transition hover:bg-slate-900"
+            variant="secondary"
           >
             Need more information?
-          </a>
+          </Button>
         </div>
 
         <div className="flex flex-wrap justify-center gap-8 text-sm text-slate-400">

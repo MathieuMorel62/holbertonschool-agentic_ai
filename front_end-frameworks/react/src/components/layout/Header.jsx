@@ -1,16 +1,11 @@
-import { BrainCircuit } from "lucide-react";
+import Brand from "../ui/Brand.jsx";
+import Button from "../ui/Button.jsx";
 
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a
-          href="#hero-section"
-          className="flex items-center gap-2 font-bold text-slate-50"
-        >
-          <BrainCircuit className="h-6 w-6 text-violet-500" />
-          <span>Agentic AI</span>
-        </a>
+        <Brand />
 
         <nav className="flex items-center gap-6">
           <ul className="hidden items-center gap-6 text-sm text-slate-400 md:flex">
@@ -39,14 +34,12 @@ function Header() {
             </li>
           </ul>
 
-          <a
+          <Button
             href="https://www.holbertonschool.fr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md bg-violet-500 px-4 py-2 text-sm font-semibold text-white hover:bg-violet-600"
+            size="small"
           >
             Enroll now
-          </a>
+          </Button>
         </nav>
       </div>
     </header>

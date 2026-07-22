@@ -1,5 +1,8 @@
-import FeatureCard from "../components/FeatureCard.jsx";
-import features from "../data/features.js";
+import FeatureCard from "../cards/FeatureCard.jsx";
+import features from "../../data/features.js";
+import SectionBadge from "../ui/SectionBadge.jsx";
+import SectionTitle from "../ui/SectionTitle.jsx";
+
 
 function Features() {
   return (
@@ -9,16 +12,14 @@ function Features() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
-            ✦ Features ✦
-          </span>
+          <SectionBadge>Features</SectionBadge>
 
-          <h2 className="mt-8 text-4xl font-black leading-none tracking-tight md:text-5xl">
+          <SectionTitle
+            className="mt-8"
+            highlight="With powerful AI agents"
+          >
             Everything You Need to Build
-            <span className="block text-violet-300">
-              With powerful AI agents
-            </span>
-          </h2>
+          </SectionTitle>
         </div>
 
         <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import SectionBadge from "../ui/SectionBadge.jsx";
+import InsightCard from "../cards/InsightCard.jsx";
+import { getInsights } from "../../services/insightsService.js";
+import SectionTitle from "../ui/SectionTitle.jsx";
 
-import InsightCard from "../components/InsightCard.jsx";
-import { getInsights } from "../services/insightsService.js";
 
 function Insights() {
   const [insights, setInsights] = useState([]);
@@ -27,16 +29,14 @@ function Insights() {
       className="scroll-mt-16 border-b border-slate-900 bg-black px-6 pb-24 text-slate-50"
     >
       <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
-        <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300 mt-20">
-          ✦ Insights ✦
-        </span>
+        <SectionBadge>Insights</SectionBadge>
 
-        <h2 className="mt-8 text-4xl font-black leading-none tracking-tight md:text-5xl">
+        <SectionTitle
+          className="mt-8"
+          highlight="Through real-world scenes"
+        >
           Explore Agentic AI
-          <span className="block text-violet-300">
-            Through real-world scenes
-          </span>
-        </h2>
+        </SectionTitle>
 
         <div className="mt-16 grid w-full gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {error && (
