@@ -3,6 +3,7 @@ import Hero from "./sections/Hero.jsx";
 import About from "./sections/About.jsx";
 import Features from "./sections/Features.jsx";
 import Insights from "./sections/Insights.jsx";
+import Contact from "./sections/Contact.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Features />
         <Insights />
+        <Contact />
       </main>
     </>
   );
