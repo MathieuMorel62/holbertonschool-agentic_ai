@@ -27,7 +27,7 @@ function Insights() {
       className="scroll-mt-16 border-b border-slate-900 bg-black px-6 pb-24 text-slate-50"
     >
       <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
-        <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
+        <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300 mt-20">
           ✦ Insights ✦
         </span>
 
