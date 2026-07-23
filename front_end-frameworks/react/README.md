@@ -63,9 +63,8 @@ public/
 
 Le `base` Vite est configuré pour GitHub Pages :
 
-```
-/holbertonschool-agentic_ai/front_end-frameworks/react/
-```
+[/holbertonschool-agentic_ai/front_end-frameworks/react/](https://mathieumorel62.github.io/holbertonschool-agentic_ai/front_end-frameworks/react/)
+
 
 Pour publier :
 
